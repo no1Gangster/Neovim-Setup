@@ -15,5 +15,5 @@ local opts = {}
 
 require("base")
 require("keymaps")
-
+vim.env.PATH = vim.env.PATH .. ';D:\\Git\\bin'
 require("lazy").setup("plugins", opts)
