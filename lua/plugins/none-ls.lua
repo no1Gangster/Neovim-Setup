@@ -1,4 +1,3 @@
-
 return {
     "nvimtools/none-ls.nvim",
     config = function()
@@ -6,9 +5,7 @@ return {
 
         null_ls.setup({
             sources = {
-                null_ls.builtins.formatting.prettier.with({
-                    command = "prettier",
-                }),
+                null_ls.builtins.formatting.prettier,
             },
             on_attach = function(client, bufnr)
                 if client.resolved_capabilities and client.resolved_capabilities.document_formatting then
